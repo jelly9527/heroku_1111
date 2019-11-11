@@ -45,6 +45,11 @@ http.createServer(function(request, response) {
     response.writeHead(200, {"Content-Type": "text/HTML"});
     response.write("<h1>men</h1>");
     response.end();
+  }else if(request.url == '/kids'){
+    console.log("接收到網頁請求！");
+    response.writeHead(200, {"Content-Type": "text/HTML"});
+    response.write("<h1>kids</h1>");
+    response.end();
   }else{
     console.log("接收到網頁請求！");
     response.writeHead(200, {"Content-Type": "text/HTML"});
