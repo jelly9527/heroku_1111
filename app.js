@@ -15,10 +15,10 @@
 // }).listen(3000);
 // console.log("Server已開啟port: 3000.");
 
-var http = require("http");
+const http = require("http");
 //  node.js 載入模組
 http.createServer(function(request, response) {
-  console.log(request);
+//   console.log(request);
   console.log(request.url);
   if(request.url == '/'){
     console.log("接收到網頁請求！");
