@@ -28,7 +28,7 @@ http.createServer(function(request, response) {
   }else if(request.url == '/sale'){
     console.log("接收到網頁請求！");
     response.writeHead(200, {"Content-Type": "text/HTML"});
-    response.write("<h1>sale</h1>");
+    response.write("<h1>sale|限時特價</h1>");
     response.end();
   }else if(request.url == '/new'){
     console.log("接收到網頁請求！");
